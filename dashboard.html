@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <title>Dashboard</title>
-  <link rel="stylesheet" type="text/css" href="styles/style.css" />
   <link rel="stylesheet" type="text/css" href="styles/dashboard.css" />
-	<script type="text/javascript" src="js/lab.min.js"></script>
+	<script type="text/javascript" src="js/LAB.min.js"></script>
 	<script type="text/javascript">
 		$LAB
 		.script("http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js")
@@ -14,10 +13,11 @@
 	</script>
 </head>
 <body>
-  <form id="lec" action="" method="post">
+  <form id="lec" action="/push" method="post">
   <div id="dbrd">
     <textarea cols=40 rows=10></textarea>
     <input type="submit" class="graceful" />
+		<ul id="updates"></ul>
   </div>
   </form>
 </body>
